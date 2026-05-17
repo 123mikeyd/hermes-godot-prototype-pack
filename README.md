@@ -41,6 +41,7 @@ From the menu:
 - `2` — Meteor Umbrella
 - `3` — Hermes Orbit: First Mission
 - `Esc` — quit
+- `Q` — quit anywhere
 
 In games:
 
@@ -48,6 +49,7 @@ In games:
 - `Space` — start/fire in Hermes Orbit
 - `R` — restart current prototype
 - `Esc` — return to menu
+- `Q` — quit immediately from any scene
 
 Hermes Orbit upgrade break:
 

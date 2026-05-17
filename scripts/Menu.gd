@@ -17,7 +17,7 @@ func _input(event: InputEvent) -> void:
 			get_tree().change_scene_to_file(choices[1].scene)
 		elif event.keycode == KEY_3:
 			get_tree().change_scene_to_file(choices[2].scene)
-		elif event.keycode == KEY_ESCAPE:
+		elif event.keycode == KEY_ESCAPE or event.keycode == KEY_Q:
 			get_tree().quit()
 
 func _draw() -> void:
@@ -35,4 +35,4 @@ func _draw() -> void:
 		draw_string(ThemeDB.fallback_font, Vector2(96, y), c.key + ". " + c.title, HORIZONTAL_ALIGNMENT_LEFT, -1, 25, Color(1.0, 0.78, 0.28))
 		draw_string(ThemeDB.fallback_font, Vector2(96, y + 28), c.desc, HORIZONTAL_ALIGNMENT_LEFT, -1, 16, Color(0.78, 0.86, 0.98))
 		y += 98
-	draw_string(ThemeDB.fallback_font, Vector2(70, 505), "Esc quits. In games: R restarts, Esc returns to menu.", HORIZONTAL_ALIGNMENT_LEFT, -1, 16, Color(0.65, 0.72, 0.86))
+	draw_string(ThemeDB.fallback_font, Vector2(70, 505), "Esc quits from menu. Q quits anywhere. In games: R restarts, Esc returns to menu.", HORIZONTAL_ALIGNMENT_LEFT, -1, 16, Color(0.65, 0.72, 0.86))

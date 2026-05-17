@@ -160,7 +160,9 @@ func get_debug_state() -> Dictionary:
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
-		if event.keycode == KEY_ESCAPE:
+		if event.keycode == KEY_Q:
+			get_tree().quit()
+		elif event.keycode == KEY_ESCAPE:
 			get_tree().change_scene_to_file("res://scenes/Menu.tscn")
 		elif event.keycode == KEY_R:
 			start_run()
@@ -514,7 +516,7 @@ func _draw_hud() -> void:
 	draw_string(ThemeDB.fallback_font, Vector2(18, 34), "%s %s" % [GAME_TITLE, VERSION], HORIZONTAL_ALIGNMENT_LEFT, -1, 20, Color(0.42, 0.78, 1.0))
 	draw_string(ThemeDB.fallback_font, Vector2(360, 34), "Score %d   Lives %d   %.0fs" % [score, lives, max(0.0, MISSION_LENGTH - run_time)], HORIZONTAL_ALIGNMENT_LEFT, -1, 20, Color(1.0, 0.84, 0.32))
 	draw_string(ThemeDB.fallback_font, Vector2(650, 34), mission_phase, HORIZONTAL_ALIGNMENT_LEFT, -1, 18, Color(0.75, 1.0, 0.88))
-	draw_string(ThemeDB.fallback_font, Vector2(18, HEIGHT - 16), message + "  WASD/Arrows move, Space fire/start, R restart, Esc menu", HORIZONTAL_ALIGNMENT_LEFT, -1, 14, Color(0.74, 0.82, 0.95))
+	draw_string(ThemeDB.fallback_font, Vector2(18, HEIGHT - 16), message + "  WASD/Arrows move, Space fire/start, R restart, Esc menu, Q quit", HORIZONTAL_ALIGNMENT_LEFT, -1, 14, Color(0.74, 0.82, 0.95))
 
 func _draw_title_overlay() -> void:
 	draw_rect(Rect2(100, 112, 760, 295), Color(0.01, 0.025, 0.055, 0.9))

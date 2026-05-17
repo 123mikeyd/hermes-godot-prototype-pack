@@ -22,6 +22,8 @@ func reset_game() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("restart"):
 		reset_game()
+	if Input.is_key_pressed(KEY_Q):
+		get_tree().quit()
 	if Input.is_key_pressed(KEY_ESCAPE):
 		get_tree().change_scene_to_file("res://scenes/Menu.tscn")
 	if over:
@@ -53,6 +55,6 @@ func _draw() -> void:
 	draw_circle(player, 20, Color(0.36, 1.0, 0.55))
 	draw_arc(player, 32, PI, TAU, 20, Color(0.75, 1.0, 0.9), 4)
 	draw_rect(Rect2(0, 0, 960, 54), Color(0, 0, 0, 0.55))
-	draw_string(ThemeDB.fallback_font, Vector2(20, 35), "Meteor Umbrella  |  Survive %.1fs  |  WASD move, R restart, Esc menu" % survived, HORIZONTAL_ALIGNMENT_LEFT, -1, 20, Color(0.95, 0.93, 1.0))
+	draw_string(ThemeDB.fallback_font, Vector2(20, 35), "Meteor Umbrella  |  Survive %.1fs  |  WASD move, R restart, Esc menu, Q quit" % survived, HORIZONTAL_ALIGNMENT_LEFT, -1, 20, Color(0.95, 0.93, 1.0))
 	if over:
 		draw_string(ThemeDB.fallback_font, Vector2(335, 276), "BONKED @ %.1fs" % survived, HORIZONTAL_ALIGNMENT_LEFT, -1, 46, Color(1.0, 0.72, 0.22))
