@@ -1,0 +1,23 @@
+# Godot generated/editor state
+.godot/
+.import/
+*.import
+
+# Exports/builds
+exports/
+builds/
+*.apk
+*.aab
+*.exe
+*.app
+*.zip
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Runtime logs
+proof_logs/*.log
+!proof_logs/.gitkeep
