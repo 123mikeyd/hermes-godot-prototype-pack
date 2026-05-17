@@ -22,13 +22,24 @@ Future upgrades:
 - meteor warning shadows
 - online daily seed
 
-## Orbit Shooter
+## Hermes Orbit: First Run
 
-Orbit Shooter tests simple projectile/enemy systems and arcade scoring.
+Hermes Orbit is the v0.2 champion prototype. It started as `OrbitShooter` and now has enough systems to evaluate as a real first playable:
+
+- title overlay and relaunch flow
+- acceleration-based player feel
+- twin-shot firing
+- wave scaling
+- enemy variants: drifter, sine, meteor, boss seed
+- pickups: crystal, repair, shield, rapid fire
+- particles and screen shake
+- debug API used by headless smoke tests
 
 Future upgrades:
 
-- enemy types
-- powerups
-- boss wave
-- screenshake and particles
+- distinct enemy silhouettes
+- authored first mission instead of pure random spawns
+- boss attack patterns
+- sound/music pass
+- controller support
+- screenshot/GIF capture for GitHub

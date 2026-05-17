@@ -1,6 +1,7 @@
 # Hermes Godot Prototype Pack Report
 
 Created: 2026-05-16
+Updated: v0.2
 
 Project path:
 
@@ -10,7 +11,7 @@ Windows path:
 
 `C:\Users\Mike\Desktop\HermesGodotPrototypePack`
 
-## What I made
+## What is in the pack
 
 A Godot 4.5 project with a menu and three tiny playable prototypes.
 
@@ -22,14 +23,6 @@ Fast 20-second collection sprint.
 - Collect all 10 crystals before the timer expires.
 - Immediate arcade loop: route planning + twitch movement.
 
-Scene:
-
-`scenes/CrystalDash.tscn`
-
-Script:
-
-`scripts/CrystalDash.gd`
-
 ### 2. Meteor Umbrella
 
 Survival dodger.
@@ -38,85 +31,29 @@ Survival dodger.
 - Procedural red/orange meteors fall faster over time.
 - Survive as long as possible.
 
-Scene:
+### 3. Hermes Orbit: First Run
 
-`scenes/MeteorUmbrella.tscn`
+v0.2 champion vertical slice.
 
-Script:
-
-`scripts/MeteorUmbrella.gd`
-
-### 3. Orbit Shooter
-
-Tiny top-down arcade shooter.
-
-- Triangular ship.
-- WASD/Arrows move.
-- Space fires shots upward.
-- Procedural pink orb enemies drift downward.
-- Score and lives UI.
-
-Scene:
-
-`scenes/OrbitShooter.tscn`
-
-Script:
-
-`scripts/OrbitShooter.gd`
-
-## Menu
-
-Main scene:
-
-`scenes/Menu.tscn`
-
-The menu lets you press:
-
-- `1` for Crystal Dash
-- `2` for Meteor Umbrella
-- `3` for Orbit Shooter
-- `Esc` to quit
-
-## Shared controls
-
-- WASD / Arrow keys: move
-- Space: shoot in Orbit Shooter
-- R: restart current game
-- Esc: return to menu
+- Launch/title overlay.
+- Acceleration-based movement.
+- Twin-shot firing.
+- Wave scaling.
+- Enemy variants: drifter, sine, meteor, boss seed.
+- Pickups: crystal, repair, shield, rapid fire.
+- Particles, screen shake, score/lives/wave HUD.
+- Game-over/relaunch flow.
+- Debug methods for automated smoke tests.
 
 ## Verification performed
 
-Godot 4.5 headless smoke test successfully loaded and instantiated all scenes.
+Godot 4.5 headless smoke test loads and instantiates all scenes and verifies v0.2 Hermes Orbit behavior.
 
-Log file:
-
-`proof_logs/smoke_all.stdout.log`
-
-Successful log contents included:
-
-```text
-HERMES_PROTOTYPE_PACK_SMOKE_START
-PASS instantiate res://scenes/Menu.tscn root=Menu
-PASS instantiate res://scenes/CrystalDash.tscn root=CrystalDash
-PASS instantiate res://scenes/MeteorUmbrella.tscn root=MeteorUmbrella
-PASS instantiate res://scenes/OrbitShooter.tscn root=OrbitShooter
-HERMES_PROTOTYPE_PACK_SMOKE_PASS
-```
-
-## Run smoke check
-
-From WSL:
+Run:
 
 ```bash
-cd /mnt/c/Users/Mike/Desktop/HermesGodotPrototypePack
 ./run_all_smokes.sh
 ```
-
-From Windows:
-
-Double-click:
-
-`RUN_PROTOTYPE_PACK_FROM_WSL.bat`
 
 ## Play visually
 

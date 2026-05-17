@@ -2,28 +2,43 @@
 
 ## Phase 1 — Clean arcade seeds
 
+Status: complete in v0.1.
+
 - Keep each prototype small and understandable.
 - Preserve procedural art so the repo remains lightweight.
 - Verify every scene headlessly before publishing changes.
 
-## Phase 2 — Pick a champion
+## Phase 2 — Champion vertical slice
 
-Choose the strongest prototype and deepen it into a real vertical slice.
+Status: started in v0.2 with **Hermes Orbit: First Run**.
 
-Evaluation criteria:
+The strongest prototype was selected and deepened into a more professional first playable.
 
-- readable within 5 seconds
-- replayable within 60 seconds
-- satisfying without external assets
-- easy to expand with new levels/enemies/rules
+Done in v0.2:
 
-## Phase 3 — Hermes-assisted iteration
+- stronger title and identity
+- playable launch/game-over loop
+- wave system
+- enemy variants
+- pickups and buffs
+- particles/screen shake
+- headless assertions for v0.2 behavior
 
-Use Hermes to add one mechanic at a time, with smoke tests after every change.
+## Phase 3 — Make the run memorable
 
-Potential directions:
+Next target: replace purely random arcade spawning with a short authored mission.
 
-- arcade roguelite
-- rail shooter
-- tiny arena survival
-- Godot-MCP live editor workflow
+Potential features:
+
+- opening sky/orbit launch sequence
+- route sections with distinct hazard language
+- mini-boss with readable phases
+- crystal route bonus objectives
+- upgrade selection between waves
+
+## Phase 4 — Public presentation
+
+- capture screenshots/GIFs
+- add release builds
+- add GitHub Actions smoke test if a Godot CLI runner is practical
+- tag releases with playable notes

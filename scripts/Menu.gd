@@ -3,7 +3,7 @@ extends Node2D
 var choices := [
 	{"key":"1", "title":"Crystal Dash", "scene":"res://scenes/CrystalDash.tscn", "desc":"20-second coin sprint. WASD/Arrows move."},
 	{"key":"2", "title":"Meteor Umbrella", "scene":"res://scenes/MeteorUmbrella.tscn", "desc":"Dodge a procedural meteor rain as long as possible."},
-	{"key":"3", "title":"Orbit Shooter", "scene":"res://scenes/OrbitShooter.tscn", "desc":"Arcade shooter: move, Space fires, pop orbs."},
+	{"key":"3", "title":"Hermes Orbit: First Run", "scene":"res://scenes/OrbitShooter.tscn", "desc":"v0.2 vertical slice: waves, pickups, shield, rapid fire, boss seed."},
 ]
 
 func _ready() -> void:
