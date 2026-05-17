@@ -4,7 +4,7 @@ A polished starter pack of tiny Godot 4.5 arcade prototypes created with Hermes 
 
 This repository is the first waypoint in a larger journey: prove that an AI-assisted workflow can rapidly generate, mutate, verify, and organize playable Godot ideas without losing the human-readable project structure.
 
-Current release: **v0.2 — Hermes Orbit: First Run**
+Current release: **v0.3 — Hermes Orbit: First Mission**
 
 ## Included prototypes
 
@@ -24,14 +24,14 @@ A survival dodger where meteor pressure ramps over time.
 - Script: `scripts/MeteorUmbrella.gd`
 - Core loop: dodge, reposition, survive longer each run
 
-### 3. Hermes Orbit: First Run
+### 3. Hermes Orbit: First Mission
 
-The v0.2 champion prototype: a top-down arcade shooter vertical slice with stronger identity and a real run loop.
+The v0.3 champion prototype: an authored 90-second top-down arcade mission with Star Fox / rail-shooter energy and neon score-chase readability.
 
 - Scene: `scenes/OrbitShooter.tscn`
 - Script: `scripts/OrbitShooter.gd`
-- Core loop: launch, dodge, shoot, collect pickups, survive waves, chase score
-- v0.2 features: title overlay, wave system, enemy variants, pickups, shield, rapid fire, repair glyphs, crystal bonuses, particles, screen shake, boss seed, game-over/relaunch flow
+- Core loop: launch, dodge, shoot, read warning lanes, choose an upgrade, clear the mini-boss
+- v0.3 features: authored mission timeline, mission phases, meteor warning lanes, upgrade break, crystal route, magnet upgrade, score popups, mini-boss, mission-clear state
 
 ## Controls
 
@@ -39,7 +39,7 @@ From the menu:
 
 - `1` — Crystal Dash
 - `2` — Meteor Umbrella
-- `3` — Hermes Orbit: First Run
+- `3` — Hermes Orbit: First Mission
 - `Esc` — quit
 
 In games:
@@ -48,6 +48,14 @@ In games:
 - `Space` — start/fire in Hermes Orbit
 - `R` — restart current prototype
 - `Esc` — return to menu
+
+Hermes Orbit upgrade break:
+
+- `1` — Rapid Fire
+- `2` — Shield Mantle
+- `3` — Repair Burst
+- `4` — Crystal Magnet
+- `Space` — default Rapid Fire
 
 ## Requirements
 
@@ -77,7 +85,7 @@ Mike's local WSL setup can also use:
 
 ## Verification
 
-The project includes a headless smoke test that loads and instantiates every scene, then checks v0.2-specific Hermes Orbit behavior:
+The project includes a headless smoke test that loads and instantiates every scene, then checks v0.3-specific Hermes Orbit behavior:
 
 ```bash
 ./run_all_smokes.sh
@@ -95,13 +103,13 @@ PASS load res://scenes/MeteorUmbrella.tscn
 PASS instantiate res://scenes/MeteorUmbrella.tscn root=MeteorUmbrella
 PASS load res://scenes/OrbitShooter.tscn
 PASS instantiate res://scenes/OrbitShooter.tscn root=OrbitShooter
-PASS Orbit Shooter exposes start_run()
-PASS Orbit Shooter exposes spawn_pickup()
-PASS Orbit Shooter exposes spawn_enemy()
-PASS Orbit Shooter exposes get_debug_state()
-PASS Orbit Shooter starts playable run
-PASS Orbit Shooter can spawn enemies
-PASS Orbit Shooter can spawn pickups
+PASS Hermes Orbit v0.3 exposes force_mission_time()
+PASS Hermes Orbit v0.3 exposes choose_upgrade()
+PASS Hermes Orbit reports v0.3
+PASS Hermes Orbit authored mission reaches meteor corridor
+PASS Hermes Orbit offers upgrade choice at mission break
+PASS Hermes Orbit applies magnet upgrade
+PASS Hermes Orbit authored mission reaches mini-boss
 HERMES_PROTOTYPE_PACK_SMOKE_PASS
 ```
 
@@ -116,7 +124,7 @@ docs/          Design notes and development roadmap
 
 ## Status
 
-v0.2 turns the strongest seed into a first vertical slice. The pack remains lightweight and transparent so it can keep evolving publicly.
+v0.3 turns Hermes Orbit from a random wave survival loop into a first authored mission. The next step is a feel/juice pass and capture media for the public repo.
 
 ## Credits
 

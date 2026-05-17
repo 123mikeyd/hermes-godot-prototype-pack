@@ -10,7 +10,7 @@ Status: complete in v0.1.
 
 ## Phase 2 — Champion vertical slice
 
-Status: started in v0.2 with **Hermes Orbit: First Run**.
+Status: complete in v0.2.
 
 The strongest prototype was selected and deepened into a more professional first playable.
 
@@ -24,21 +24,34 @@ Done in v0.2:
 - particles/screen shake
 - headless assertions for v0.2 behavior
 
-## Phase 3 — Make the run memorable
+## Phase 3 — First authored mission
 
-Next target: replace purely random arcade spawning with a short authored mission.
+Status: complete in v0.3.
+
+Hermes Orbit now has a 90-second mission arc instead of only random spawning.
+
+Done in v0.3:
+
+- launch corridor
+- drifter wave
+- sine gauntlet
+- meteor corridor with warning lanes
+- upgrade break
+- crystal route
+- mini-boss phase
+- mission clear state
+- v0.3 smoke-test coverage
+
+## Phase 4 — Make the run memorable
+
+Next target: feel and presentation.
 
 Potential features:
 
-- opening sky/orbit launch sequence
-- route sections with distinct hazard language
-- mini-boss with readable phases
-- crystal route bonus objectives
-- upgrade selection between waves
-
-## Phase 4 — Public presentation
-
-- capture screenshots/GIFs
-- add release builds
-- add GitHub Actions smoke test if a Godot CLI runner is practical
-- tag releases with playable notes
+- boss attack patterns
+- player hit flash
+- muzzle/audio feedback
+- screen transitions
+- score medals / rank screen
+- screenshot and GIF capture
+- release build packaging

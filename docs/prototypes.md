@@ -22,24 +22,26 @@ Future upgrades:
 - meteor warning shadows
 - online daily seed
 
-## Hermes Orbit: First Run
+## Hermes Orbit: First Mission
 
-Hermes Orbit is the v0.2 champion prototype. It started as `OrbitShooter` and now has enough systems to evaluate as a real first playable:
+Hermes Orbit is the champion prototype. It started as `OrbitShooter`, became `Hermes Orbit: First Run` in v0.2, and now has an authored first mission in v0.3.
 
-- title overlay and relaunch flow
-- acceleration-based player feel
-- twin-shot firing
-- wave scaling
-- enemy variants: drifter, sine, meteor, boss seed
-- pickups: crystal, repair, shield, rapid fire
-- particles and screen shake
-- debug API used by headless smoke tests
+v0.3 adds:
+
+- 90-second mission timeline
+- named phases: launch, drifter wave, sine gauntlet, meteor corridor, upgrade break, crystal route, mini-boss
+- warning lanes before meteors enter
+- upgrade break with four choices
+- crystal magnet upgrade
+- score popups
+- mission clear state
+- automation methods for testing mission phase jumps
 
 Future upgrades:
 
-- distinct enemy silhouettes
-- authored first mission instead of pure random spawns
-- boss attack patterns
+- authored boss attack phases
+- player hit flash and invulnerability animation
 - sound/music pass
 - controller support
 - screenshot/GIF capture for GitHub
+- release build packaging

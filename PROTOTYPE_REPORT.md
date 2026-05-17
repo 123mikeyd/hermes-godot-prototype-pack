@@ -1,7 +1,7 @@
 # Hermes Godot Prototype Pack Report
 
 Created: 2026-05-16
-Updated: v0.2
+Updated: v0.3
 
 Project path:
 
@@ -31,23 +31,24 @@ Survival dodger.
 - Procedural red/orange meteors fall faster over time.
 - Survive as long as possible.
 
-### 3. Hermes Orbit: First Run
+### 3. Hermes Orbit: First Mission
 
-v0.2 champion vertical slice.
+v0.3 champion authored mission.
 
-- Launch/title overlay.
-- Acceleration-based movement.
-- Twin-shot firing.
-- Wave scaling.
-- Enemy variants: drifter, sine, meteor, boss seed.
-- Pickups: crystal, repair, shield, rapid fire.
-- Particles, screen shake, score/lives/wave HUD.
-- Game-over/relaunch flow.
+- 90-second mission timeline.
+- Launch corridor.
+- Drifter wave.
+- Sine gauntlet.
+- Meteor corridor with warning lanes.
+- Upgrade break with Rapid/Shield/Repair/Magnet.
+- Crystal route.
+- Mini-boss phase.
+- Score popups, particles, screen shake, mission clear.
 - Debug methods for automated smoke tests.
 
 ## Verification performed
 
-Godot 4.5 headless smoke test loads and instantiates all scenes and verifies v0.2 Hermes Orbit behavior.
+Godot 4.5 headless smoke test loads and instantiates all scenes and verifies v0.3 Hermes Orbit behavior.
 
 Run:
 

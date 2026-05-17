@@ -12,8 +12,12 @@ Three playable seeds shipped:
 
 ## v0.2 — Hermes Orbit: First Run
 
-The pack now has a champion prototype. Orbit Shooter became Hermes Orbit: First Run, a more professional vertical slice with waves, pickups, enemy variants, particles, screen shake, and automated smoke assertions.
+Orbit Shooter became Hermes Orbit: First Run, a more professional vertical slice with waves, pickups, enemy variants, particles, screen shake, and automated smoke assertions.
 
-The next milestone is to make the first run memorable rather than merely functional.
+## v0.3 — Hermes Orbit: First Mission
+
+Hermes Orbit now has its first authored mission: launch, drifter wave, sine gauntlet, meteor corridor, upgrade break, crystal route, and mini-boss.
+
+This moves the project from “it works” to “it has a journey.”
 
 Principle: small playable loops first, polish second, public story always honest.

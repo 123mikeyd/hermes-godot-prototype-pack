@@ -7,11 +7,13 @@ The smoke harness is `tools/smoke_all.gd`. It loads and instantiates:
 - `scenes/MeteorUmbrella.tscn`
 - `scenes/OrbitShooter.tscn`
 
-For v0.2, it also verifies that Hermes Orbit exposes the public debug/control methods used for automation:
+For v0.3, it also verifies that Hermes Orbit exposes the public debug/control methods used for automation:
 
 - `start_run()`
 - `spawn_enemy(pos, kind)`
 - `spawn_pickup(pos, kind)`
+- `force_mission_time(t)`
+- `choose_upgrade(kind)`
 - `get_debug_state()`
 
 Run:
@@ -32,12 +34,19 @@ PASS load res://scenes/MeteorUmbrella.tscn
 PASS instantiate res://scenes/MeteorUmbrella.tscn root=MeteorUmbrella
 PASS load res://scenes/OrbitShooter.tscn
 PASS instantiate res://scenes/OrbitShooter.tscn root=OrbitShooter
-PASS Orbit Shooter exposes start_run()
-PASS Orbit Shooter exposes spawn_pickup()
-PASS Orbit Shooter exposes spawn_enemy()
-PASS Orbit Shooter exposes get_debug_state()
-PASS Orbit Shooter starts playable run
-PASS Orbit Shooter can spawn enemies
-PASS Orbit Shooter can spawn pickups
+PASS Hermes Orbit exposes start_run()
+PASS Hermes Orbit exposes spawn_pickup()
+PASS Hermes Orbit exposes spawn_enemy()
+PASS Hermes Orbit exposes get_debug_state()
+PASS Hermes Orbit v0.3 exposes force_mission_time()
+PASS Hermes Orbit v0.3 exposes choose_upgrade()
+PASS Hermes Orbit reports v0.3
+PASS Hermes Orbit starts playable run
+PASS Hermes Orbit can spawn enemies
+PASS Hermes Orbit can spawn pickups
+PASS Hermes Orbit authored mission reaches meteor corridor
+PASS Hermes Orbit offers upgrade choice at mission break
+PASS Hermes Orbit applies magnet upgrade
+PASS Hermes Orbit authored mission reaches mini-boss
 HERMES_PROTOTYPE_PACK_SMOKE_PASS
 ```
